@@ -24,7 +24,7 @@ pipeline {
                 sh '''
                 docker stop devops-container || true
                 docker rm devops-container || true
-                docker run -d -p 8080:8080 --name devops-container devops-app
+                docker run -d -p 8081:8080 --name devops-container devops-app
                 '''
             }
         }
