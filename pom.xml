@@ -7,7 +7,14 @@
 <packaging>war</packaging>
 
 <build>
-<finalName>simple-app</finalName>
+	<finalName>simple-app</finalName>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version> <!-- Latest stable version -->
+        </plugin>
+    </plugins>
 </build>
 
 </project>
